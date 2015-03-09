@@ -1,0 +1,109 @@
+
+/* ----------- */
+/* Base Styles */
+/* ----------- */
+
+.container {
+	border-style: solid;
+	border-width: 6px;
+	border-color: gray;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	width: 810px;
+	height: 950px;
+	border-radius: 9px;
+	
+}
+.wrapper {
+	margin: auto;
+	max-width: 800px;
+}
+
+
+
+/* ---------- */
+/* Box Colors */
+/* ---------- */
+	
+.box-blue {
+	background-color: #27689e;
+	
+}
+
+.box-red {
+	background-color: #d55b55;
+}
+
+.box-yellow {
+	background-color: #dabd5b;
+	
+}
+
+.box-green {
+	background-color: #92af1d;
+}
+
+
+
+/* ---------- */
+/* Box Sizes */
+/* ---------- */
+
+.box-square-small {
+	height:200px;
+	width: 200px
+}
+
+.box-square-large {
+	height: 300px;
+	width: 300px;
+
+}
+
+.box-rect-small {
+	height:50px;
+	width:300px;
+
+}
+
+.box-rect-large {
+	height:150px;
+	width:600px;
+}
+
+
+
+/* --------------- */
+/* Box Positioning */
+/* --------------- */
+
+.box-left {
+	float: left;
+
+}
+
+.box-right {
+	float: right;
+
+}
+
+
+
+
+/* ------- */
+/* Utility */
+/* ------- */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
