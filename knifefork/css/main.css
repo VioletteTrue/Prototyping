@@ -47,7 +47,7 @@ h3 {
 .wrapper-signin {
 	margin-top:80px;
 	padding:0px;
-
+	diplay: inline-block;
 }
 
 img {
@@ -150,7 +150,7 @@ input[type="text"] {
 	text-align: right; 
 	border:0px;
 	margin-top:20px;
-	width:840px;
+	width:780px;
 }
 
 input[type="submit"] {
@@ -165,7 +165,7 @@ input[type="submit"] {
 	border:0px;
 	margin-bottom:40px;
 	text-align: right;
-	width: 840px;
+	width: 780px;
 }
 
 
