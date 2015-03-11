@@ -10,13 +10,13 @@
 //     alert("Hey Lara, wanna get somthing to eat?");
 // }
 
-var newwindow;
-function poptastic(url)
-{
-	newwindow=window.open(url,'invites.html','height=400,width=200');
-	if (window.focus) {newwindow.focus()}
+		var newwindow;
+		function poptastic(url)
+		{
+		newwindow=window.open(url,'invites.html','height=400,width=200');
+		if (window.focus) {newwindow.focus()}
 }
-</script>
+		</script>
 	</head>
 	<body>
 
@@ -25,25 +25,23 @@ function poptastic(url)
 			<div class="nav-right" style="background-color:#2F3340">
 				<nav>
 					<ul>
-					<li><img src="img/menu.png" style="width:60%"></li>
+						<li><img src="img/menu.png" style="width:60%"></li>
             			<li class="menu-item"><a href="index.html" onclick="event.stopImmediatePropagation();$('#sign out').click();">SIGN OUT</a></li>
             			<li class="menu-item"><a href="index.html" onclick="event.stopImmediatePropagation();$('#home').click();">HOME</a></li>
             			<li class="menu-item"><a href="javascript:poptastic('invites.html');">INVITES<img src="img/counter.png"></a></li>
-
             			<!-- <li><button onclick="myFunction()">INVITES</button></li> -->
-            		
        				</ul>
 				</nav>
 			</div>
 			
-			<header><h1>MY Picks</h1>
-			</header>
-			<button>Search</button> <button>Filter</button> <button>Distance</button> <button>Name</button> <button>Map</button> <button>Cuisine</button> <button>Neighborhood</button>
+			<header><h1>MY Picks</h1></header>
+				<button>Search</button> <button>Filter</button> <button>Distance</button> <button>Name</button> <button>Map</button> <button>Cuisine</button> <button>Neighborhood</button>
 
-		<div> <!-- favorites -->
+			<div> <!-- favorites -->
+			
 			<section>
+			
 			<div class="wrapper-list">
-
 				<ul>
 					<li><img src="img/leadbelly.jpg" style="width:30%" align=left><li>
 					<li><h3>Leadbelly</h3>
@@ -73,11 +71,12 @@ function poptastic(url)
 						<button>MAKE A DATE</button> <button>MAP</button> <button style="background-color:#CD4D07">REMOVE</button><a href="http://www.opentable.com/new-york-city-restaurants"><img src='https://brandfolder.com/opentable/assets/tev7seez' style="width:20%" align=right></a></li>
 				</ul>	
 			</div>
+
 			</section>
+
 		</div> <!-- favorites -->
 <hr>
-		<header><h1 style="color:#CD4D07">NEW Restaurants</h1>
-			</header>
+		<header><h1 style="color:#CD4D07">NEW Restaurants</h1></header>
 			<button>Search</button><button>Filter</button><button>Distance</button><button>Name</button><button>Map</button><button>Cuisine</button><button>Neighborhood</button>
 
 		<div> <!-- New Places -->
@@ -89,6 +88,7 @@ function poptastic(url)
 						<p>A Jewish kid from Long Island who opened a ramen shop in Tokyo? You have to admire the chutzpah. Chef Ivan Orkin succeeded with the noodle connoisseurs in Japan, and then opened another shop here on the Lower East Side. Of course the ramen is amazing, (hello triple-pork, triple-garlic!), but there are other great dishes too, like the braised beef tongue.</p><button>SAVE</button></li>
 				</ul>	
 			</div>
+			
 			<div class="wrapper-list">
 				<ul>
 					<li><img src="img/cata.jpg" style="width:30%" align=left><li>
@@ -111,6 +111,7 @@ function poptastic(url)
 		</div><!-- New Places -->
 
 		</div> <!-- wrapper -->	
+		
 		<footer>
 			<h5 class="navbackground-blu"><a href="mailto:dina.mastrodimos@gmail.com">dina@gmail</h5>
 		</footer>
