@@ -46,6 +46,9 @@ h5 {
 	text-align: right;
 	color:#2F3340;
 }
+section {
+	max-width: 650%;
+}
 
 .wrapper {
 	max-width: 650%;
@@ -55,16 +58,19 @@ h5 {
 .wrapper-nested {
 	margin: 0px;
 	padding: 5px;
+	max-width: 650%;
 
 }
 .wrapper-signin {
 	margin-top:80px;
 	padding:0px;
+	max-width: 650%;
 }
 .wrapper-list {
 	margin-bottom:10px;
 	display:inline-block;
 	border-top: 1px solid #2F3340;
+	max-width: 650%;
 }
 
 img {
@@ -194,12 +200,22 @@ input[type="submit"] {
 /* ------ */
 /* Footer */
 /* ------ */
-
-
+footer {
+	max-width: 650%;
+	margin: auto;
+}
 
 /* ------- */
 /* Utility */
 /* ------- */
+
+@media (min-width: 600px) {
+	.wrapper {
+    max-width: 650px;
+}
+footer{
+    max-width: 650px;
+}
 
 .clearfix:before,
 .clearfix:after {
