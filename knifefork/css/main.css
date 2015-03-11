@@ -12,14 +12,14 @@ body {
 
 }
 p {
-	font-size:2em;
+	font-size:1em;
 	margin-left:10px;
 	margin-top:0px;
 	margin-bottom:0px;
 }
 h1 {
 	font-weight: 100;
-	font-size: 8em;
+	font-size: 6em;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color:#fff;
@@ -30,7 +30,7 @@ h2 {
 	margin-bottom: 0px;
 }
 h3 {
-	font-size: 4em;
+	font-size: 1em;
 	margin-bottom: 0px;
 	margin-top:0px;
 }
@@ -49,10 +49,16 @@ h3 {
 	padding:0px;
 	diplay: inline-block;
 }
+.wrapper-list {
+	margin-bottom:10px;
+	display:inline-block;
+	border-top: 1px solid #2F3340;
+	max-width: 650%;
+}
 
 img {
 	max-width: 100%;
-	border-radius: 5px;
+	margin: 0 5px 0 5px;
 }
 
 .placeholder {
@@ -96,7 +102,7 @@ ul {
 }
 nav ul li {
 	text-align:right;
-	font-size:7em;
+	font-size:4em;
 	color:white;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:800;
@@ -106,7 +112,7 @@ nav ul li {
 .nav-right ul li{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
-	font-size: 2em;
+	font-size: 1em;
 	display: inline-block;
 	line-height:.8em;
 	padding: 20px;
@@ -132,6 +138,14 @@ nav ul li {
 .navbackground-yellow {
 	background-color:#FDDE26;
 }
+button {
+	background-color: #0A5C9C;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	color:#fff;
+	font-size: .8rem;
+}
 
 
 /* ------- */
@@ -150,7 +164,7 @@ input[type="text"] {
 	text-align: right; 
 	border:0px;
 	margin-top:20px;
-	width:600px;
+	width:450px;
 }
 
 input[type="submit"] {
@@ -165,9 +179,16 @@ input[type="submit"] {
 	border:0px;
 	margin-bottom:40px;
 	text-align: right;
-	width: 600px;
+	width: 450px;
 }
-
+hr { 
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #ccc, #fff, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #fff, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #fff, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #fff, #ccc);
+}
 
 /* ------ */
 /* Footer */
@@ -178,6 +199,11 @@ input[type="submit"] {
 /* ------- */
 /* Utility */
 /* ------- */
+
+@media (min-width: 600px) {
+	.wrapper {
+    max-width: 650px;
+}
 
 .clearfix:before,
 .clearfix:after {
