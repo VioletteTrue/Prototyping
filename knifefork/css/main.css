@@ -159,12 +159,12 @@ input[type="text"] {
 	color:#FDDE26;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:800;
-	font-size: 3em;
+	font-size: 2em;
 	line-height:1em;
 	text-align: right; 
 	border:0px;
 	margin-top:20px;
-	width:450px;
+	width:300px;
 }
 
 input[type="submit"] {
@@ -174,12 +174,12 @@ input[type="submit"] {
 	color:#fff;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:800;
-	font-size: 3em;
+	font-size: 2em;
 	line-height:1em;
 	border:0px;
 	margin-bottom:40px;
 	text-align: right;
-	width: 450px;
+	width: 300px;
 }
 hr { 
     border: 0;
