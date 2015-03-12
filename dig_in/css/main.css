@@ -12,7 +12,7 @@ body {
 
 }
 p {
-	font-size:.8em;
+	font-size:.8rem;
 	margin-left:10px;
 	margin-top:0px;
 	margin-bottom:0px;
@@ -21,19 +21,19 @@ p {
 }
 h1 {
 	font-weight: 100;
-	font-size: 4em;
+	font-size: 4rem;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color:#2F3340;
 	line-height: .9em;
 }
 h2 {
-	font-size: 3em;
+	font-size: 3rem;
 	margin-bottom: 0px;
 	color:#2F3340;
 }
 h3 {
-	font-size: 1em;
+	font-size: 1rem;
 	margin-bottom: 0px;
 	margin:5 0 0 10;
 	color:#2F3340;
@@ -41,7 +41,7 @@ h3 {
 h5 {
 	color:#fff;
 	padding:10px;
-	font-size: .6em;
+	font-size: .6rem;
 	font-weight: 100;
 	text-align: right;
 	color:#2F3340;
@@ -120,7 +120,7 @@ ul {
 }
 nav ul li {
 	text-align:right;
-	font-size:2em;
+	font-size:2rem;
 	color:white;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:800;
@@ -130,7 +130,7 @@ nav ul li {
 .nav-right ul li{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:200;
-	font-size: 1em;
+	font-size: 1rem;
 	display: inline-block;
 	line-height:.8em;
 	padding: 15px 15px 15px 0;
@@ -174,7 +174,7 @@ input[type="text"] {
 	color:#736D68;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: center; 
 	border:0px;
 	margin-top:20px;
@@ -189,7 +189,7 @@ input[type="submit"] {
 	color:#fff;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:600;
-	font-size: 1em;
+	font-size: 1rem;
 	border:0px;
 	width:345px;
 	padding:10px;
