@@ -51,26 +51,26 @@ section {
 }
 
 .wrapper {
-	max-width: 650%;
+	max-width: 650px;
 	margin: auto;
 
 }
 .wrapper-nested {
 	margin: 0px;
 	padding: 5px;
-	max-width: 650%;
+	max-width: 650px;
 
 }
 .wrapper-signin {
-	margin-top:80px;
+	margin-top:40px;
 	padding:0px;
-	max-width: 650%;
+	max-width: 650px;
 }
 .wrapper-list {
 	margin-bottom:10px;
 	display:inline-block;
 	border-top: 1px solid #2F3340;
-	max-width: 650%;
+	max-width: 650px;
 }
 
 img {
