@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F0AFBB44-A619-4307-B98F-42E12B1A2F13</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Dig in</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2569B8082D8ABC98545E3660074CF8BF02831B6A</key>
+		<string>https://github.com/VioletteTrue/Prototyping.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>dig_in/Dig in/Dig in.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2569B8082D8ABC98545E3660074CF8BF02831B6A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/VioletteTrue/Prototyping.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2569B8082D8ABC98545E3660074CF8BF02831B6A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2569B8082D8ABC98545E3660074CF8BF02831B6A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Prototyping</string>
+		</dict>
+	</array>
+</dict>
+</plist>
