@@ -1,0 +1,92 @@
+
+/* -------------- */
+/* General Styles */
+/* -------------- */
+
+/* These styles apply to the whole document */
+
+body {background-image: url(image.jpg);
+	background-repeat: no-repeat
+	/*background-color: #3F64A5;
+	color: #fff*/;
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+
+
+.wrapper {
+	background-color: #BF616A;
+	margin: 0 auto;
+	max-width: 626px;
+	padding: 20px;
+}
+
+/* For responsive images */
+img {
+	max-width: 100%;
+}
+.bg {
+	;
+}
+
+
+
+/* ---------- */
+/* Typography */
+/* ---------- */
+
+/* Anything to do with text. Keep base elements (h1, h2, etc.) at the top, and more specific elements at the bottom (.subtitle, .caption, etc.) */
+
+h1 {
+	margin: 0;
+	padding: 20px 0;
+}
+
+.subtitle {
+	margin-top: 100px;
+}
+
+
+
+
+/* ------- */
+/* Content */
+/* ------- */
+
+
+
+/* ------ */
+/* Footer */
+/* ------ */
+
+
+
+/* ------- */
+/* Utility */
+/* ------- */
+
+
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+
+/* Mobile styles here. min-width only! We'll talk more about this next time. */
+
