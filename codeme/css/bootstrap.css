@@ -1421,8 +1421,9 @@ ol ol {
   margin-bottom: 0;
 }
 .list-unstyled {
-  padding-left: 0;
+  padding: 0;
   list-style: none;
+  margin-bottom: 20px;
 }
 .list-inline {
   padding-left: 0;

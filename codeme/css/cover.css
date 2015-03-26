@@ -16,6 +16,7 @@
   font-size: 2rem;
   letter-spacing: .1rem;
  }
+ 
 
 .large {
   font-size: 5rem;
@@ -62,6 +63,9 @@ a:focus,
 a:hover {
   color: #fff;
 }
+.active {
+  color:#d62323;
+}
 
 
 input {
@@ -78,6 +82,12 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+.socialmedia li {
+  text-decoration: none;
+  margin: 0 0 20px -40px;
+  list-style-type: none;
+  padding: 0px
 }
 
 .btn {
@@ -162,6 +172,16 @@ header {
       width:200%; 
       height:200%;
     }
+#bg-skate {
+      position:absolute;
+      top:30%; 
+      left:35%; 
+      right:0; 
+      bottom:-50%; 
+      width:30%;
+      height: auto;
+      
+}
 #bg img {
       position:absolute; 
       top:0; 
@@ -179,10 +199,10 @@ header {
       right:0; 
       bottom:0; 
       margin-bottom:-30px; 
-      max-width:20%;
-      max-height:20%;
-      min-width: 30%
-      min-height:30%;
+      max-width:30%;
+      max-height:30%;
+      min-width: 30%;
+      min-height:auto;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
