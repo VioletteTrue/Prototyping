@@ -1,4 +1,4 @@
 # Prototyping
 
-Codeme was created with bootstrap
-and Future Insights was created uding Foundation
+"codeme" was created with bootstrap
+and "futureinsights" was created using Foundation
