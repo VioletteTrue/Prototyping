@@ -17,7 +17,6 @@
   letter-spacing: .1rem;
  }
  
-
 .large {
   font-size: 5rem;
   color: #555;
@@ -45,7 +44,6 @@
  .nav-red {
   background-color: #cb324b;
  }
-
  .nav-gray {
   background-color: #333;
  }
@@ -66,8 +64,6 @@ a:hover {
 .active {
   color:#d62323;
 }
-
-
 input {
   background-color: #333;
   border:1px dotted #666;
@@ -89,7 +85,6 @@ textarea {
   list-style-type: none;
   padding: 0px
 }
-
 .btn {
   background-color: #cb324b;
 }
@@ -99,7 +94,6 @@ textarea {
 .btn-lg-blue {
   background-color:#7d9cae;
 }
-
 .page {
     position: relative;
 }
@@ -110,7 +104,6 @@ textarea {
     background-color: #34ab00;
     color: #FFF
 }
-
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -179,8 +172,7 @@ header {
       right:0; 
       bottom:-50%; 
       width:30%;
-      height: auto;
-      
+      height: auto;  
 }
 #bg img {
       position:absolute; 
@@ -357,71 +349,71 @@ header {
     display: block;
     line-height: 1.1;
     margin-top: 0;
-    font-size: 2.2em
+    font-size: 2.2em;
 }
 
 @media screen and (min-width: 58.75em) {
     .block-heading {
         display: inline-block;
-        font-size: 2.75em
+        font-size: 2.75em;
     }
 }
 
 @media screen and (min-width: 83em) {
     .block-heading {
-        font-size: 3.4em
+        font-size: 3.4em;
     }
 }
 
 .block-heading--numbered {
     position: relative;
     padding-left: 4.5em;
-    font-size: 1.65em
+    font-size: 1.65em;
 }
 
 .block-heading--numbered[data-numbered="01/"] {
-    padding-left: 4em
+    padding-left: 4em;
 }
 
 @media screen and (min-width: 25em) {
     .block-heading--numbered {
-        font-size: 2.2em
+        font-size: 2.2em;
     }
 }
 
 @media screen and (min-width: 58.75em) {
     .block-heading--numbered {
         font-size: 2.75em;
-        margin-left: -.15em
+        margin-left: -.15em;
     }
 }
 
 @media screen and (min-width: 83em) {
     .block-heading--numbered {
-        font-size: 3.4em
+        font-size: 3.4em;
     }
 }
 
 .grid .block-heading--numbered {
-    margin-bottom: 1em
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 58.75em) {
     .grid .block-heading--numbered {
         font-size: 2.25em;
-        margin-bottom: 1.35em
+        margin-bottom: 1.35em;
     }
 }
 
 @media screen and (min-width: 83em) {
     .grid .block-heading--numbered {
-        font-size: 2.75em
+        font-size: 2.75em;
     }
 }
 
 @media screen and (min-width: 92em) {
     .grid .block-heading--numbered {
-        font-size: 3em
+        font-size: 3em;
     }
 }
 
@@ -432,7 +424,7 @@ header {
     line-height: .8;
     position: absolute;
     left: 0;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 /*
@@ -457,7 +449,7 @@ header {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+   width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
@@ -465,6 +457,6 @@ header {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+   width: 700px;
   }
 }
