@@ -125,7 +125,7 @@ select {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5rem; 
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
   .row:before, .row:after {
     content: " ";
@@ -167,7 +167,7 @@ select {
   padding-right: 0.9375rem;
   width: 100%;
   float: left; 
-  border:2px solid #000;
+  /*border:2px solid #000;*/
 }
 
 [class*="column"] + [class*="column"]:last-child {
