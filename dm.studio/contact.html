@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
-    <title>studio</title>
+    <title>contact</title>
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
+<div class="container">
+
     <nav class="navbar-fixed-top">
-    <header class="container">
+    <header class="wrapper">
+    <div class="row">
         <div class="logo-wrapper">
             <a href="#"><span class="logo"><img src="assets/logo.png"></span></a>
         </div>
@@ -22,21 +25,24 @@
             <li><a href="#">Company</a></li>
             <li><a class="active" href="#">Contact</a></li>
         </ul>
+    </div>
     </header>
     </nav>
 
 
-    <section class="container">
+    <section class="wrapper">
         
         <div class="row">
           <div class="col-sm-6">
             <h4>GET IN TOUCH</h4>          
             <p>We’re very approachable and would love to speak to you. Feel free to call, send us an email, Tweet us or simply complete the enquiry form.</p>
+            <p><img align="right" src="assets/thumbs/agapitos.jpg"></p>
           </div> 
 
           <div class="col-sm-6">
             <h4>SEND US A MESSAGE</h4>
-            <form>
+            <form action="contact.php" method="GET" target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
             <p>Name</p>
             <input type="text" name="Name"> 
             <p>Email</p>
@@ -57,17 +63,11 @@
 
 
 
-
-
-
-
-
-
-    <footer class="container">
-  
+    <footer class="wrapper">
         <h5>©2015 VioletteTrue Creative</h5>
-
     </footer>
+
+</div> <!-- container -->
 
 </body>
 </html>

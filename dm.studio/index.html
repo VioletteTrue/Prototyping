@@ -8,14 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
     <title>studio</title>
     <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-2.5.3.min.js"></script>
 
 
 </head>
 
 <body>
+<div class="containter">
+
     <nav class="navbar-fixed-top">
 
-    <header class="container">
+    <header class="wrapper">
+        <div class="row">
         <div class="logo-wrapper">
             <a href="#"><span class="logo"><img src="assets/logo.png"></span></a>
         </div>
@@ -24,15 +28,16 @@
             <li><a href="company.html">Company</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
+        </div>
     </header>
     </nav>
 
 
-    <section class="container">
-        <h4>SELECTED</h4>
+    <section class="wrapper">
+       
 
-    <div class="row">
+    <div class="row"> 
+    <h4>SELECTED</h4>
         <div class="col-sm-3">
             <a href="#"><img class="project-thumb" src="assets/thumbs/flake.jpg" width="218" height="218">
             </a>
@@ -77,10 +82,9 @@
     </div>
 
 
-<div class="row">
+    <div class="row">
         <div class="col-sm-3">
-            <a href="#"><img class="project-thumb" src="assets/thumbs/inception-heart.svg" class="inception-heart" width="218" height="218">
-            </a>
+            <img class="project-thumb" class="inception-heart" src="assets/thumbs/inception-heart.svg" width="218" height="218">
         </div>
 
         <div class="col-sm-3">
@@ -98,20 +102,20 @@
             </a>
         </div>
     </div>
-
-
+    
     </section>
 
 
 
 
 
-    <footer class="container">
+    <footer class="wrapper">
   
         <h5>©2015 VioletteTrue Creative</h5>
 
     </footer>
-    
+
+</div> <!-- container --> 
 
 </body>
 </html>
