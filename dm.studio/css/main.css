@@ -28,16 +28,10 @@ html, body {
   clear:left;
 }*/
 .container {
-  padding-left: 30px;
+  padding-left: 15px;
   padding-right: 30px;
   margin: auto;
   width: 960px;
-  
-}
-.wrapper {
-  margin: auto;
-  max-width: 940px;
-  clear:left;
 }
 
 @media (min-width: 768px) {
@@ -55,7 +49,21 @@ html, body {
 	    width: 1170px;
 	  }
 }*/
-
+.wrapper {
+  margin: auto;
+  max-width: 940px;
+  clear:left;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    width: 970px;
+  }
+}
 h4{
 	padding-top: 150px;
 	letter-spacing: .1rem;
@@ -157,6 +165,12 @@ header {
   left:0;
   z-index: 1030;
   background-color: #fff;
+}
+@media (min-width: 768px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
 }
 
 .menu {
