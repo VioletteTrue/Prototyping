@@ -39,6 +39,7 @@ a {
 
 a:hover {
     color: #90071a
+    text-decoration: none;
 }
 
 a:focus {
@@ -64,7 +65,7 @@ p {
 
 img {
     border: 0;
-    max-width: 100%;
+    width: 100%;
 }
 
 input {
@@ -80,8 +81,11 @@ input {
     padding: 0;
     width: 100%;
     float: left;
-    opacity: 0.7;
+    opacity: .5;
     filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black !important;
 }
 
 header {
@@ -130,16 +134,6 @@ nav#global>ul.main>li {
     -webkit-transition: background-color .25s ease-in-out;
 }
 
-nav#global ul.main>li div.subnav {
-    position: absolute;
-    display: none;
-    background: #ecebe7;
-    padding: 30px;
-    width: auto;
-    z-index: 9999;
-    box-shadow: 9px 9px 0 rgba(0, 0, 0, 0.2);
-}
-
 nav#global ul.social>li div.newsletter {
     position: absolute;
     display: none;
@@ -186,7 +180,7 @@ div.newsletter div#gforms_confirmation_message span.arrow {
 }
 
 div.newsletter form span.arrow, div.newsletter div#gforms_confirmation_message span.arrow {
-    background: url('images/sprite.png') right 0 no-repeat;
+    background: url('img/sprite.png') right 0 no-repeat;
     width: 16px;
     height: 8px;
     display: block;
@@ -293,11 +287,11 @@ nav#global ul.main>li:hover span {
 }
 
 nav#global ul.main>li a:hover, nav#global ul.main>li a.active {
-    color: #df001f
+    color: #df001f;
 }
 
 nav#global ul.main>li:hover {
-    background: #ecebe7
+    background: #ecebe7;
 }
 
 nav#global ul.social li {
@@ -359,7 +353,7 @@ nav#global ul.social li.facebook:hover {
 }
 
 .wrapper {
-    width: 950px;
+    width: 960px;
     margin: 0 auto;
     position: relative;
 }
@@ -400,7 +394,7 @@ html.mobile a#logo {
 }
 
 a#top {
-    background: url('img/sprite.png') 0 -1135px no-repeat;
+    /*background: url('img/sprite.png') 0 -1135px no-repeat;*/
     width: 46px;
     height: 55px;
     display: none;
@@ -419,10 +413,11 @@ section#slider {
     padding: 0;
     float: left;
     height: 530px;
-    background: #e6e1de url('img/tile3.jpg');
-    overflow: hidden;
+    /*background: #e6e1de;*/
+    /*overflow: hidden;*/
     position: relative;
     top: 0;
+
 }
 
 section#slider article.slide {
@@ -434,35 +429,37 @@ section#slider article.slide {
     left: 0;
     width: 100%;
     visibility: hidden;
+
 }
 
 section#slider article.slide .wrapper {
-    height: 530px
+    height: 530px;
 }
 
 section#slider article.slide hgroup {
     position: absolute;
     bottom: -300px;
     left: 0px;
-    width: 800px;
+    /*width: 800px;*/
     z-index: 999;
 }
 
 section#slider article.slide hgroup h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 100;
-    letter-spacing: .1rem;
-    margin: 0 0 1px 0;
-    padding: 0;
+    letter-spacing: .2rem;
+    margin: 0;
+    padding: 10px 10px 10px 0;
     color: #fff;
-    max-width: 800px;
+    /*max-width: 800px;*/
 }
 
 section#slider article.slide hgroup h1 span {
-    background: #333237;
-    background: rgba(0, 0, 0, 0.4);
+    /*background: #333237;*/
+    background: rgba(0, 0, 0, 0.5);
     padding: 5px 15px 0;
     display: inline-block;
+
 }
 
 section#slider article.slide hgroup h3 span {
@@ -507,7 +504,7 @@ section#slider article.slide hgroup .button {
 }
 
 section#slider article.slide hgroup .button span {
-    background: #df0020 url('img/sprite.png') 140px -438px no-repeat;
+    /*background: #df0020 url('img/sprite.png') 140px -438px no-repeat;*/
     color: #fff;
     height: 44px;
     float: left;
@@ -522,7 +519,7 @@ section#slider article.slide hgroup .button span {
 }
 
 section#slider article.slide hgroup .button span:last-child {
-    background: #333237 url('img/sprite.png') 140px -438px no-repeat;
+    /*background: #333237 url('img/sprite.png') 140px -438px no-repeat;*/
     color: #fff;
     float: left;
     bottom: -44px;
@@ -630,8 +627,8 @@ h3 {
 
 div#visit.block {
     position: relative;
-    width: 346px;
-    height: 410px;
+    width: 340px;
+    height: 400px;
 }
 
 div#visit div.address {
@@ -639,7 +636,7 @@ div#visit div.address {
     height: 410px;
     background: #fdfcf1;
     position: absolute;
-    top: -34px;
+    top: -45px;
     padding: 30px;
     z-index: 999;
 }
@@ -703,14 +700,15 @@ a.arrow.red:hover {
 }
 
 div#school {
-    margin: 40px 0 45px 0;
+    margin-left:-10px;
     position: relative;
+
 }
 
 div#school h2 {
     background: #efefee;
     position: absolute;
-    bottom: 73px;
+    bottom: 70px;
     padding: 10px 25px;
 }
 
@@ -720,7 +718,7 @@ div#school p {
     bottom: 35px;
     padding: 15px 25px;
     margin: 0;
-    font: normal normal 16px/20px 'Banda', sans-serif;
+    font-size: .9rem;
 }
 
 div#school p.link {
@@ -2468,7 +2466,7 @@ footer ul.social-links {
 }
 
 footer ul.social-links li {
-    background: url('images/sprite.png') 0 0 no-repeat;
+    background: url('img/sprite.png') 0 0 no-repeat;
     width: 41px;
     height: 41px;
     margin: 0 3px 0 0;
@@ -4407,3 +4405,32 @@ section#content div.container .main h2.filter_title {
 @media screen and (min-width:320px) and (max-width:480px){
 
 }
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+/* Styles for some mobile devices */
+}
+ 
+@media only screen and (min-width : 321px) {
+/* Styles for some other mobiles  */
+}
+/* @media Rule */
+@media all and (max-width: 1024px) {...}
+
+/* @import Rule */
+@import url(styles.css) all and (max-width: 1024px) {...}
+section,
+aside {
+  margin: 1.858736059%;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+

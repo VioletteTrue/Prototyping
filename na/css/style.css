@@ -92,6 +92,137 @@ header {
     left: 0;
     z-index: 9999;
 }
+ection#slider {
+    width: 100%;
+    /*margin: 0;
+    padding: 0;*/
+    /*float: left;*/
+    /*height: 530px;*/
+    /*background: #e6e1de url('img/tile3.jpg');*/
+    /*overflow: hidden;
+    position: relative;
+    top: 0;*/
+}
+
+section#slider article.slide {
+    /*position: absolute;*/
+    /*height: 530px;*/
+    overflow: hidden;
+    z-index: 888;
+    /*top: -100%;*/
+   /* left: 0;*/
+    width: 100%;
+    /*visibility: hidden;*/
+}
+
+section#slider article.slide .wrapper {
+    height: 530px
+}
+
+section#slider article.slide hgroup {
+    position: absolute;
+    bottom: -300px;
+    left: 5px;
+    width: 800px;
+    z-index: 999;
+}
+
+section#slider article.slide hgroup h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    margin: 5px;
+    padding: 20px;
+    color: #fff;
+    max-width: 800px;
+}
+
+section#slider article.slide hgroup h1 span {
+    background: #333237;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 15px 0;
+    display: inline-block;
+}
+
+section#slider article.slide hgroup h3 span {
+    background: #333237;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+section#slider article.slide.light hgroup h1 span {
+    background: #333237;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    display: inline-block;
+}
+
+section#slider article.slide.light hgroup h3 span {
+    background: #333237;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+section#slider article.slide hgroup h3 {
+    font: normal normal 12px/24px 'Banda', sans-serif;
+    float: left;
+    clear: both;
+    padding: 0;
+    color: #fff;
+}
+
+section#slider article.slide hgroup .button {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    height: 44px;
+    clear: left;
+    width: 170px;
+    top: 800px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+section#slider article.slide hgroup .button span {
+    background: #df0020 url('img/sprite.png') 140px -438px no-repeat;
+    color: #fff;
+    height: 44px;
+    float: left;
+    clear: left;
+    font: normal normal 15px/48px 'Banda', sans-serif;
+    padding: 0 50px 0 20px;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+}
+
+section#slider article.slide hgroup .button span:last-child {
+    background: #333237 url('img/sprite.png') 140px -438px no-repeat;
+    color: #fff;
+    float: left;
+    bottom: -44px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.bgheight {
+    height: 100%
+}
+
+.bgwidth {
+    width: 100%
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 div.strip {
     width: 40%;
@@ -101,6 +232,14 @@ div.strip {
     top: 0;
     left: 0;
     
+}
+
+.nav-list {
+    font-size:.9rem;
+  color: #777;
+  text-decoration: none;
+  cursor: crosshair;
+  background-color: transparent;
 }
 
 nav#global {
@@ -414,137 +553,7 @@ a#top {
     overflow: hidden;
 }
 
-section#slider {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    float: left;
-    height: 530px;
-    background: #e6e1de url('img/tile3.jpg');
-    overflow: hidden;
-    position: relative;
-    top: 0;
-}
-
-section#slider article.slide {
-    position: absolute;
-    height: 530px;
-    overflow: hidden;
-    z-index: 888;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-}
-
-section#slider article.slide .wrapper {
-    height: 530px
-}
-
-section#slider article.slide hgroup {
-    position: absolute;
-    bottom: -300px;
-    left: 0px;
-    width: 800px;
-    z-index: 999;
-}
-
-section#slider article.slide hgroup h1 {
-    font-size: 1.8rem;
-    font-weight: 100;
-    letter-spacing: .1rem;
-    margin: 0 0 1px 0;
-    padding: 0;
-    color: #fff;
-    max-width: 800px;
-}
-
-section#slider article.slide hgroup h1 span {
-    background: #333237;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 5px 15px 0;
-    display: inline-block;
-}
-
-section#slider article.slide hgroup h3 span {
-    background: #333237;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 5px 15px;
-    display: inline-block;
-}
-
-section#slider article.slide.light hgroup h1 span {
-    background: #333237;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    display: inline-block;
-}
-
-section#slider article.slide.light hgroup h3 span {
-    background: #333237;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 5px 15px;
-    display: inline-block;
-}
-
-section#slider article.slide hgroup h3 {
-    font: normal normal 12px/24px 'Banda', sans-serif;
-    float: left;
-    clear: both;
-    padding: 0;
-    color: #fff;
-}
-
-section#slider article.slide hgroup .button {
-    overflow: hidden;
-    position: relative;
-    float: left;
-    height: 44px;
-    clear: left;
-    width: 170px;
-    top: 800px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-section#slider article.slide hgroup .button span {
-    background: #df0020 url('img/sprite.png') 140px -438px no-repeat;
-    color: #fff;
-    height: 44px;
-    float: left;
-    clear: left;
-    font: normal normal 15px/48px 'Banda', sans-serif;
-    padding: 0 50px 0 20px;
-    text-transform: uppercase;
-    display: block;
-    position: absolute;
-    text-decoration: none;
-    width: 100%;
-}
-
-section#slider article.slide hgroup .button span:last-child {
-    background: #333237 url('img/sprite.png') 140px -438px no-repeat;
-    color: #fff;
-    float: left;
-    bottom: -44px;
-    overflow: hidden;
-    position: absolute;
-}
-
-.bgheight {
-    height: 100%
-}
-
-.bgwidth {
-    width: 100%
-}
-
-#bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+s
 
 #controls {
     position: absolute;
@@ -667,7 +676,7 @@ div#visit div.address a:hover {
 .arrow.red {
     background: url('img/sprite.png') 73px -397px no-repeat;
     display: block;
-    font-size: .8rem;
+    font-size: .9rem;
     transition: color .25s ease-in-out;
     -moz-transition: color .25s ease-in-out;
     -webkit-transition: color .25s ease-in-out;
@@ -1999,343 +2008,6 @@ p a.back {
     padding: 0 30px 0 0;
 }
 
-/*section#content div.container .main.academicians h3, section#content div.container .main.faculty h3 {
-    margin: 0 0 10px 0
-}
-
-section#content div.container .main.academicians ul {
-    list-style: none;
-    padding: 0;
-    float: left;
-    width: 280px;
-    margin: 0 20px 20px 0;
-}
-
-section#content div.container .main.academicians div, section#content div.container .main.faculty div {
-    float: left;
-    width: 100%;
-}
-
-section#content div.container .main.academicians div, section#content div.container .main.faculty div {
-    line-height: 30px
-}
-
-section#content div.container .main.academicians ul li, section#content div.container .main.faculty ul {
-    float: left;
-    margin: 0 20px 0 0;
-    width: 100%;
-}
-
-section#content div.container .main.academicians ul li, section#content div.container .main.faculty ul li {
-    margin: 0 0 10px 0;
-    font-size: 14px;
-    line-height: 20px;
-    clear: left;
-}
-
-section#content div.container ul.faculty {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-section#content div.container ul.alpha {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 140px;
-}
-
-section#content div.container ul.alpha li {
-    float: left;
-    width: 30px;
-    height: 30px;
-    margin: 0 5px 5px 0;
-    text-align: center;
-    font: normal normal 22px/31px 'Banda', sans-serif;
-    text-transform: uppercase;
-}
-
-body.collections div.selections ul.alpha li a.active {
-    display: block;
-    color: #929292;
-}
-
-section#content div.container ul.alpha li a {
-    display: block;
-    color: #323236;
-}
-
-section#content div.container ul.alpha li a:hover {
-    color: #323236;
-    background: #f7f7f7;
-}
-
-section#content div.container ul.alpha li.active a {
-    color: #df0020;
-    background: #f7f7f7;
-}
-
-section#content div.container .sidebar.alpha h2 {
-    font: normal normal 200px/200px 'Banda', sans-serif
-}
-
-section#content div.container div.main.talks h3, section#content div.container div.main.exhibitions h3 {
-    font: normal normal 26px/31px 'Banda', sans-serif;
-    margin: 30px 0 0 0;
-}
-
-section#content div.container div.main.talks ul, section#content div.container div.main.exhibitions ul {
-    width: 100%;
-    float: left;
-    list-style: none;
-    margin: 30px 0 0 0;
-    padding: 0;
-}
-
-section#content div.container div.main.talks ul li, section#content div.container div.main.exhibitions ul li {
-    background: #fff;
-    width: 100%;
-    float: left;
-    overflow: hidden;
-    min-height: 230px;
-    margin: 0 0 15px 0;
-}
-
-section#content div.container div.main.talks ul li div.content, section#content div.container div.main.exhibitions ul li div.content {
-    padding: 30px;
-    float: left;
-}
-
-section#content div.container div.main.talks ul li div.content div.text,
-section#content div.container div.main.exhibitions ul li div.content div.text {
-    float: left;
-    width: 404px;
-}
-
-section#content div.container div.main.talks ul li div.content p.title,
-section#content div.container div.main.exhibitions ul li div.content p.title {
-    font: normal bold 18px/20px 'Banda', sans-serif;
-    margin: 0 0 10px 0;
-    clear: left;
-    float: left;
-}
-
-section#content div.container div.main.talks ul li div.content p.text,
-section#content div.container div.main.exhibitions ul li div.content p.text,
-section#content div.container div.main.talks ul li div.content p.tix,
-section#content div.container div.main.exhibitions ul li div.content p.tix {
-    clear: left;
-    float: left;
-    line-height: 24px;
-}
-
-section#content div.container div.main.talks ul li div.content p.date_time,
-section#content div.container div.main.exhibitions ul li div.content p.date_time {
-    font: italic normal 14px/20px 'Banda', sans-serif;
-    margin: 0 0 5px 0;
-    clear: left;
-    float: left;
-}
-
-section#content div.container div.main.talks ul li div.content div.img,
-section#content div.container div.main.exhibitions ul li div.content div.img {
-    width: 189px;
-    height: auto;
-    float: left;
-    overflow: hidden;
-    margin: 0 30px 0 0;
-}
-
-section#content div.container div.main.talks ul li div.content p a.tix,
-section#content div.container div.main.exhibitions ul li div.content p a.tix {
-    background: url('images/sprite.png') 101px -396px no-repeat;
-    margin: 10px 0 0 0;
-    float: left;
-    clear: left;
-    font: normal normal 14px/20px 'Banda', sans-serif;
-    padding: 0 50px 0 0;
-    -webkit-transition: background-position .25s ease-in-out;
-    -moz-transition: background-position .25s ease-in-out;
-    transition: background-position .25s ease-in-out;
-}
-
-section#content div.container div.main.talks ul li div.content p a.tix:hover, section#content div.container div.main.exhibitions ul li div.content p a.tix:hover {
-    background-position: 111px -396px
-}
-
-section#content div.container div.main.press h3 {
-    font-size: 23px;
-    margin: 0 0 10px 0;
-}
-
-section#content div.container div.main.press div.release, section#content div.container div.main.press div.article,
-section#content div.container div.main.press div.gallery {
-    width: 210px;
-    margin: 0 20px 0 0;
-    float: left;
-    line-height: 20px;
-}
-
-section#content div.container div.main.press ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-
-section#content div.container div.main.press ul li {
-    font-size: 13px;
-    margin: 0 0 15px 0;
-}
-
-section#content div.container div.main.news ul {
-    width: 720px;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: -10px;
-}
-
-section#content div.container div.main.news div.sticky {
-    width: 100%;
-    background: #fff;
-    float: left;
-    min-height: 296px;
-    line-height: 26px;
-    margin: 10px 0 20px 0;
-}
-
-section#content div.container div.main.news ul li.top {
-    width: 220px;
-    background: #fff;
-    float: left;
-}
-
-section#content div.container div.main.news ul li div.img:hover div.overlay {
-    display: block;
-}
-
-section#content div.container div.main.news ul li div.overlay {
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6) url(images/large_icn.png) center center no-repeat;
-    display: none;
-}
-
-section#content div.container div.main.news ul li.top div.img {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    width: 220px;
-    height: 250px;
-}
-
-section#content div.container div.main.news ul li.left {
-    width: 460px;
-    float: left;
-    overflow: hidden;
-    max-height: 300px;
-}
-
-section#content div.container div.main.news ul li.left div.img {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    width: 220px;
-    height: 300px;
-}
-
-section#content div.container div.main.news ul li.nobg {
-    width: 220px;
-    float: left;
-    background: transparent;
-}
-
-section#content div.container div.main.news ul li {
-    width: 220px;
-    background: #fff;
-    float: left;
-    min-height: 206px;
-    margin: 10px;
-}
-
-section#content div.container div.main.news h3 {
-    font: normal bold 18px/20px 'Banda', sans-serif;
-    margin: 0 0 15px 0;
-    float: left;
-    width: 100%;
-}
-
-section#content div.container div.main.news p.text {
-    font: normal normal 14px/23px 'Banda', sans-serif;
-    float: left;
-    width: 100%;
-}
-
-section#content div.container div.main.news p.date {
-    font: italic normal 14px/23px 'Banda', sans-serif;
-    margin: 0 0 3px 0;
-    float: left;
-    width: 100%;
-}
-
-section#content div.container div.main.news p.link a {
-    font: normal normal 14px/23px 'Banda', sans-serif;
-    margin: 10px 0 0 0;
-    position: relative;
-    padding: 0 30px 0 0;
-    float: left;
-    clear: left;
-    -webkit-transition: color .25s ease-in-out;
-    -moz-transition: color .25s ease-in-out;
-    transition: color .25s ease-in-out;
-}
-
-section#content div.container div.main.news p.link a span {
-    -webkit-transition: right .25s ease-in-out;
-    -moz-transition: right .25s ease-in-out;
-    transition: right .25s ease-in-out;
-    background: url('images/sprite.png') 0 -403px;
-    width: 12px;
-    height: 5px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 10px;
-}
-
-section#content div.container div.main.news p.link a:hover {
-    color: #90071a
-}
-
-section#content div.container div.main.news p.link a:hover span {
-    right: -10px
-}
-
-section#content div.container div.main.news div.sticky div.content,
-section#content div.container div.main.news ul li div.content {
-    padding: 18px;
-    float: left;
-}
-
-section#content div.container div.main.news ul li.top div.content {
-    clear: both
-}
-
-section#content div.container div.main.news ul li.left div.content {
-    clear: right;
-    width: 194px;
-    float: right;
-}*/
-
 footer {
     color: black;
     width: 100%;
@@ -2385,7 +2057,6 @@ footer nav ul.cols-wrap > .col {
 
 footer nav ul.nav-section {
     margin: 0 25px 30px 0;
-    font-size: .8rem;
 }
 
 footer nav ul.nav-section li {
@@ -2393,11 +2064,9 @@ footer nav ul.nav-section li {
     margin: 45px 35px 0 0;
     
 }
-.nav-section {
-    font-size: .8rem;
-}
+
 .nav-head {
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 700;
     margin: 45px 35px 0 0;
 }
@@ -2457,7 +2126,7 @@ footer ul.social-links {
 }
 
 footer ul.social-links li {
-    background: url('images/sprite.png') 0 0 no-repeat;
+    background: url('img/sprite.png') 0 0 no-repeat;
     width: 41px;
     height: 41px;
     margin: 0 3px 0 0;
