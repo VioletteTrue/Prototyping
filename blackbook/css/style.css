@@ -1,3 +1,166 @@
+/*Spry*/
+@charset "UTF-8";
+
+
+.panel-heading a:after {
+    /*font-family:'Glyphicons Halflings';*/
+   /* content:"\e114";
+    float: right;
+    color: grey;*/
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}
+
+/* SpryCollapsiblePanel.css - version 0.5 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main CollapsiblePanel container. For our
+ * default style, the CollapsiblePanel is responsible for drawing the borders
+ * around the widget.
+ *
+ * If you want to constrain the width of the CollapsiblePanel widget, set a width on
+ * the CollapsiblePanel container. By default, our CollapsiblePanel expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("CollapsiblePanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * CollapsiblePanel container.
+ */
+
+.CollapsiblePanel {
+    margin: 0px;
+    padding: 0px;
+    /*border-left: solid 1px #CCC;
+    border-right: solid 1px #999;
+    border-top: solid 1px #999;
+    border-bottom: solid 1px #CCC;*/
+}
+
+input {
+  background-color: #fff;
+  border:1px dotted #77C4D3;
+  margin-bottom: 6px;
+  margin-top: -5px;
+  width:300px;
+  height: 100px;
+}
+textarea {
+  background-color: #fff;
+  border:1px dotted #777;
+  width:100%;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #888;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: .8rem;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 4px;
+  height: 30px;
+  background-color:#df0020;
+  color:#fff;
+}
+.btn:hover {
+    background-color: #777;
+    color:#fff;
+}
+
+
+/* This is the selector for the CollapsiblePanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open or close the panel.
+ *
+ * The name of the class ("CollapsiblePanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * CollapsiblePanel panel tab container.
+ */
+.CollapsiblePanelTab {
+    font: bold 0.7em sans-serif;
+    background-color: #DDD;
+    border-bottom: solid 1px #CCC;
+    margin: 0px;
+    padding: 2px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+}
+
+/* This is the selector for a CollapsiblePanel's Content area. It's important to note that
+ * you should never put any padding on the content area element if you plan to
+ * use the CollapsiblePanel's open/close animations. Placing a non-zero padding on the content
+ * element can cause the CollapsiblePanel to abruptly grow in height while the panels animate.
+ *
+ * The name of the class ("CollapsiblePanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style a
+ * CollapsiblePanel content container.
+ */
+.CollapsiblePanelContent {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* An anchor tag can be used inside of a CollapsiblePanelTab so that the
+ * keyboard focus ring appears *inside* the tab instead of around the tab.
+ * This is an example of how to make the text within the anchor tag look
+ * like non-anchor (normal) text.
+ */
+.CollapsiblePanelTab a {
+    color: black;
+    text-decoration: none;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "CollapsiblePanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the CollapsiblePanel.
+ */
+.CollapsiblePanelOpen .CollapsiblePanelTab {
+    background-color: #EEE;
+}
+
+/* This is an example of how to change the appearance of the panel tab when the
+ * CollapsiblePanel is closed. The "CollapsiblePanelClosed" class is programatically added and removed
+ * whenever the CollapsiblePanel is closed.
+ */
+
+.CollapsiblePanelClosed .CollapsiblePanelTab {
+ /* background-color: #EFEFEF */
+}
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "CollapsiblePanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.CollapsiblePanelTabHover,  .CollapsiblePanelOpen .CollapsiblePanelTabHover {
+    background-color: #CCC;
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * CollapsiblePanel has focus. The "CollapsiblePanelFocused" class is programatically added and removed
+ * whenever the CollapsiblePanel gains or loses keyboard focus.
+ */
+.CollapsiblePanelFocused .CollapsiblePanelTab {
+    background-color: #3399FF;
+}
+
+/*__________*/
 
 article,
 aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -33,12 +196,12 @@ html.mobile body {
 }
 
 a {
-    color: #df001f;
+    color: #df0020;
     text-decoration: none;
 }
 
 a:hover {
-    color: #90071a
+    color: #777;
     text-decoration: none;
 }
 
@@ -77,7 +240,7 @@ input {
     height: 100%;
     height: auto;
     min-height: 100%;
-    margin: 0 0 100px 0;
+    margin: 0 0 90px 0;
     padding: 0;
     width: 100%;
     float: left;
@@ -98,9 +261,9 @@ header {
 }
 
 div.strip {
-    width: 40%;
+    width: 83%;
     background: #faf9f5;
-    height: 64px;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
@@ -150,11 +313,11 @@ nav#global ul.social>li div.newsletter ul li {
 }
 
 nav#global ul.social>li div.newsletter ul li label {
-    display: none
+    display: none;
 }
 
 nav#global ul.social>li div.newsletter div.gform_footer {
-    float: left
+    float: left;
 }
 
 div#gforms_confirmation_message {
@@ -166,7 +329,7 @@ div#gforms_confirmation_message {
 }
 
 div#gforms_confirmation_message {
-    background: #fae78d !important
+    background: #fae78d !important;
 }
 
 div#gforms_confirmation_message p {
@@ -176,7 +339,7 @@ div#gforms_confirmation_message p {
 }
 
 div.newsletter div#gforms_confirmation_message span.arrow {
-    background-position: right -8px !important
+    background-position: right -8px !important;
 }
 
 div.newsletter form span.arrow, div.newsletter div#gforms_confirmation_message span.arrow {
@@ -200,7 +363,7 @@ div.newsletter form span.gform_description, div.validation_message {
 }
 
 div.newsletter li.gfield_error div.validation_message {
-    color: #df001f
+    color: #df001f;
 }
 
 div.validation_message {
@@ -2566,7 +2729,7 @@ div.address p {
     overflow: hidden;
     height: 32px;
     z-index: 9999;
-    background: #fff url('images/sprite.png') -111px -390px no-repeat;
+    background: #fff url('img/sprite.png') -111px -390px no-repeat;
 }
 
 #back a {
@@ -4399,9 +4562,9 @@ section#content div.container .main h2.filter_title {
         content: attr(data-src-800px, url);
     }
 }
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} } 
+@media (min-width:640px) { body {font-size:.9rem;} } 
+@media (min-width:960px) { body {font-size:.9rem;} } 
+@media (min-width:1100px) { body {font-size:.9rem;} } 
 @media screen and (min-width:320px) and (max-width:480px){
 
 }
