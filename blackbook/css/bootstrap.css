@@ -294,6 +294,10 @@ th {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  color: #666;
+  font-size: 1.5rem;
+  margin: 8px 10px 0 10px;
+  float: right;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

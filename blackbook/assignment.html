@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicon.ico">
     <link href="css/bootstrap.css" rel="stylesheet"> 
     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/style.css" media="all and (max-width: 1024px" />
+    <link rel="stylesheet" href="css/style.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/restive.min.js"></script>
@@ -26,9 +26,8 @@
             <nav id="global">
                 <ul class="main">
                 <li class="museum"><a href="index.html" class="">Home</a><span></span></li>
-                <li class="museum"><a href="" class="">Assignments</a><span></span></li>
-                <li class="school"><a href="index.html" class="">Image Search</a><span></span></li>
-                <li class="academicians"><a href="index.html" class="">Portfolio</a><span></span></li>
+                <li class="museum"><a href="" class="active">Assignments</a><span></span></li>
+                <li class="academicians"><a href="portfolio.html" class="">Portfolio</a><span></span></li>
                 <li class="about"><a href="index.html" class="">The Forum</a><span></span></li>
                 </ul>                               
             </nav>
@@ -68,9 +67,9 @@
     </section> <!-- #slider -->
 
 <!-- Second Nav -->
-      <div class="container">
+      <div  class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav style="margin-top:-20px" class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -79,7 +78,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">My Assignments</a>
+              <!-- <a class="navbar-brand" href="#">My Assignments</a> -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -125,10 +124,11 @@
                     <div class="panel-body">
                             
                         <div class="col-sm-3">
-                            <img style="padding-bottom:20px"src="img/archangle.jpg"><br>
-                            <p class="small" class="dfn">Van Eyck: The Crucifixion; The Last Judgment.</p>
+                            <img style="padding-bottom:20px"src="img/gauguin.jpg"><br>
+                            <p class="small" class="dfn">Paul Gauguin (French, Paris 1848–1903) Atuona, Hiva Oa, Marquesas Islands, ca. 1899.
+                            Charcoal on laid paper.</p>
                             <br>
-                            <button type="button" class="btn">MAP</button>
+                            <a href="img/met-map.jpg"><button type="button" class="btn">The Met Map</button></a>
                             </div>
                             <br>
                         <div class="col-sm-9">
@@ -167,7 +167,7 @@
                             <img style="padding-bottom:20px"src="img/dagger.jpg"><br>
                             <p class="small" class="dfn">Ceremonial Dagger (Bichwa), 17th century. South Indian, Thanjavur. Steel, gold.</p>
                             <br>
-                            <button type="button" class="btn">MAP</button>
+                            <a href="img/met-map.jpg"><button type="button" class="btn">The Met Map</button></a>
                             </div>
                             <br>
                         <div class="col-sm-9">
@@ -202,12 +202,12 @@
                         <div class="panel-body">
                     
                     <div class="col-sm-3">
-                            <img style="padding-bottom:20px"src="img/cranachssaintmaurice.jpg"><br>
-                            <p class="small" class="dfn">Lucas Cranach the Elder and Workshop (German, 1472–1553). Saint Maurice, ca. 1520–25. Oil on wood.</p>
-                            <img style="padding-bottom:20px"src="img/kahindi.jpg"><br>
+                            <a href="assets/cranachssaintmaurice.jpg">enlarge<img style="padding-bottom:20px"src="img/cranachssaintmaurice.jpg"></a><br>
+                            <p class="small" class="dfn">Lucas Cranach the Elder and Workshop (German, 1472–1553). Saint Maurice, ca. 1520–25. Oil on wood.</p><br>
+                            <a href="assets/kahindi.jpg">enlarge<img style="padding-bottom:20px"src="img/kahindi.jpg"></a>
                             <p class="small" class="dfn">Kehinde Wiley (American, born 1970) Oil and enamel on canvas.</p>
                             <br>
-                            <button type="button" class="btn">MAP</button>
+                            <a href="img/met-map.jpg"><button type="button" class="btn">The Met Map</button></a>
                             </div>
                             <br>
                         <div class="col-sm-9">
@@ -322,7 +322,20 @@
     var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5");
     var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6", {openPanelKeyCode:34, closePanelKeyCode:33});
     </script>
+    <script>function basicPopup(url) {
+popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+    }</script>
 
+    <script language="javascript">
+var popupWindow = null;
+function centeredPopup(url,winName,w,h,scroll){
+LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+settings =
+'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+popupWindow = window.open(url,winName,settings)
+}
+</script>
 
 </body>
 </html>
