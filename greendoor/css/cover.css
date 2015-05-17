@@ -1,0 +1,497 @@
+/*
+ * Globals
+ */
+@font-face {
+  font-family: 'font-awesome-webfont';
+  src: url('font.eot?') format('eot'), url('font.woff') format('woff'), url('font.ttf') format('truetype');
+}
+ 
+ h1 {
+  font-weight: 100;
+  color:#555;
+  font-size: 6rem;
+  margin: 0px;
+ }
+ h2 {
+  font-size: 2rem;
+  letter-spacing: .1rem;
+
+ }
+
+ h3 {
+  font-weight:200;
+  color: #96CA2D;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+h4 {
+  font-weight: 100;
+  color:#666;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+figcaption {
+  font-weight: 200;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: #96CA2D;
+  margin-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+ .margin {
+  margin-top: 40px;
+  
+ }
+ 
+.large {
+  font-size: 5rem;
+  color: #555;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+ }
+ .blue {
+  color: #7d9cae;
+ }
+.red {
+  color:#cb324b;
+ }
+.gold {
+  color:#eb8a29;
+ }
+ .grey {
+  color:#555;
+ }
+ .nav-blue {
+  background-color: #7d9cae;
+ }
+ .nav-yellow {
+  background-color: #ffc30b;
+ }
+ .nav-red {
+  background-color: #cb324b;
+ }
+ .nav-gray {
+  background-color: #333;
+ }
+ .navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 0 0 0;
+  /*background-color: #ffc30b;*/
+  border-top:0;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #96CA2D;
+}
+.active {
+  color:#96CA2D;
+}
+input {
+  background-color: #333;
+  border:1px dotted #666;
+  margin-bottom: 6px;
+  margin-top: -5px;
+  width:200px;
+}
+textarea {
+  background-color: #333;
+  border:1px dotted #7d9cae;
+  width:200px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.socialmedia li {
+  text-decoration: none;
+  margin: 0 0 20px -40px;
+  list-style-type: none;
+  padding: 0px
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #96CA2D;
+  border: 1px solid #96CA2D;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #666;
+}
+.btn {
+  background-color: #96CA2D;
+  color: #000;
+}
+
+.page {
+    position: relative;
+}
+.bg--red {
+    background-color: #d62323;
+}
+.bg--green {
+    background-color: #34ab00;
+    color: #FFF
+}
+
+.approach-pencil {
+    left: -6%;
+    position: relative;
+    max-width: 6em;
+    margin-top: -17.8375em;
+    margin-bottom: 8em;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  width:100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+header {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+#bg {
+      position:fixed; 
+      /*top:-60%;*/ 
+      left:-50%; 
+      bottom:-50%;
+      width:200%; 
+      height:200%;
+    }
+#bg-skate {
+      position:absolute;
+      top:30%; 
+      left:35%; 
+      right:0; 
+      bottom:-50%; 
+      width:30%;
+      height: auto;  
+}
+#bg img {
+      position:absolute; 
+      top:0; 
+      left:0; 
+      right:0; 
+      bottom:0; 
+      margin:auto; 
+      min-width:50%;
+      min-height:50%;
+    } 
+#image {
+  /*position:absolute; */
+      top:50%; 
+      left:0; 
+      right:0; 
+      bottom:0; 
+      margin-bottom:-30px; 
+      max-width:30%;
+      max-height:30%;
+      min-width: 30%;
+      min-height:auto;
+}
+
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.ul {
+  display: table-cell;
+  vertical-align: right;
+  padding-right: 20px;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+.logo__tagline {
+    
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 0;
+    display: none;
+    text-align: left;
+}
+
+.logo__graphic {
+    max-width: 10em;
+}
+
+@media screen and (min-width: 30em) {
+    .logo__graphic {
+        max-width: 100%;
+        margin: .5em auto;
+    }
+}
+
+@media screen and (min-width: 58.75em) {
+    .logo__graphic {
+        margin: 0;
+        margin-bottom: .3em;
+    }
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  margin-right: 50px
+
+}
+.masthead-nav > li + li {
+  
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+.dividing-header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 18px 18px 0 18px;
+    border-color: #252525 transparent transparent transparent;
+  }
+.panel__header {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1em;
+}
+.panel__title {
+    font-size: 2em;
+    padding-top: .65em;
+    margin: 0;
+    float: left;
+    position: relative;
+    top: -.25em;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+/*block header
+*/
+.block-heading {
+    display: block;
+    line-height: 1.1;
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+@media screen and (min-width: 58.75em) {
+    .block-heading {
+        display: inline-block;
+        font-size: 2.75em;
+    }
+}
+
+@media screen and (min-width: 83em) {
+    .block-heading {
+        font-size: 3.4em;
+    }
+}
+
+.block-heading--numbered {
+    position: relative;
+    padding-left: 4.5em;
+    font-size: 1.65em;
+}
+
+.block-heading--numbered[data-numbered="01/"] {
+    padding-left: 4em;
+}
+
+@media screen and (min-width: 25em) {
+    .block-heading--numbered {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width: 58.75em) {
+    .block-heading--numbered {
+        font-size: 2.75em;
+        margin-left: -.15em;
+    }
+}
+
+@media screen and (min-width: 83em) {
+    .block-heading--numbered {
+        font-size: 3.4em;
+    }
+}
+
+.grid .block-heading--numbered {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 58.75em) {
+    .grid .block-heading--numbered {
+        font-size: 2.25em;
+        margin-bottom: 1.35em;
+    }
+}
+
+@media screen and (min-width: 83em) {
+    .grid .block-heading--numbered {
+        font-size: 2.75em;
+    }
+}
+
+@media screen and (min-width: 92em) {
+    .grid .block-heading--numbered {
+        font-size: 3em;
+    }
+}
+
+.block-heading--numbered:before {
+    display: block;
+    content: attr(data-numbered);
+    font-size: 2.7em;
+    line-height: .8;
+    position: absolute;
+    left: 0;
+    letter-spacing: 2px;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 700px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .site-wrapper {
+   width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .site-wrapper {
+   width: 100%;
+  }
+}
